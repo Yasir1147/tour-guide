@@ -1,0 +1,138 @@
+@import "./aed-font.css";
+@import "./default-styles.css";
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Montserrat", sans-serif;
+
+  --color-rust-50: #FFF5EF;
+  --color-rust-100: #FDE0D0;
+  --color-rust-200: #FDB79C;
+  --color-rust-300: #FB8857;
+  --color-rust-400: #E05E1B;
+  --color-rust-500: #B24814;
+  --color-rust-600: #903A0D;
+  --color-rust-700: #6F2B07;
+  --color-rust-800: #4F1C04;
+  --color-rust-900: #310F02;
+  --color-rust-950: #310F02;
+
+  --color-teal-50: #EDF9FF;
+  --color-teal-100: #CEEDFC;
+  --color-teal-200: #9ADEF9;
+  --color-teal-300: #46B5D8;
+  --color-teal-400: #348BA6;
+  --color-teal-500: #226174;
+  --color-teal-600: #113B48;
+  --color-teal-700: #0B303B;
+  --color-teal-800: #0A2731;
+  --color-teal-900: #051B24;
+  --color-teal-950: #031319;
+
+  --color-red-50: #FDF1F1;
+  --color-red-100: #F9E2E2;
+  --color-red-200: #F5C1C0;
+  --color-red-300: #F0A4A2;
+  --color-red-400: #EE8986;
+  --color-red-500: #FC6060;
+  --color-red-600: #E73B30;
+  --color-red-700: #BC281C;
+  --color-red-800: #7C170F;
+  --color-red-900: #7C170F;
+  --color-red-950: #7C170F;
+
+  --color-green-50: #EEF9F3;
+  --color-green-100: #E0F4E8;
+  --color-green-200: #BFE7CE;
+  --color-green-300: #A2DDB7;
+  --color-green-400: #85D19E;
+  --color-green-500: #44C980;
+  --color-green-600: #56A36B;
+  --color-green-700: #417D52;
+  --color-green-800: #2A5236;
+  --color-green-900: #2A5236;
+  --color-green-950: #2A5236;
+
+  --color-grey-50: #FDFDFD;
+  --color-grey-100: #F7F7F8;
+  --color-grey-200: #F1F2F3;
+  --color-grey-300: #E4E5E7;
+  --color-grey-400: #D4D6D9;
+  --color-grey-500: #C5C9CD;
+  --color-grey-600: #B8BCC2;
+  --color-grey-700: #8F959E;
+  --color-grey-800: #686E79;
+  --color-grey-900: #474B52;
+  --color-grey-950: #242629;
+}
+
+:root {
+  /* Overrides */
+  --ui-text: var(--ui-color-neutral-950);
+  --ui-text-dimmed: var(--ui-color-neutral-600);
+}
+
+
+body {
+  font-family: var(--font-sans);
+}
+
+.m-container {
+  @apply w-full max-w-[1600px] mx-auto px-4 sm:px-6 xl:px-4;
+}
+
+.s-container {
+  @apply w-full max-w-[1200px] mx-auto px-4 sm:px-6 xl:px-4;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: var(--ui-color-neutral-300) transparent;
+  /* Firefox */
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--ui-color-neutral-300);
+  border-radius: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-button {
+  display: none;
+  /* Remove arrows */
+  width: 0;
+  height: 0;
+}
+
+:target {
+  scroll-margin-top: 10rem;
+}
+
+.toast-success-bg {
+  background:
+    linear-gradient(180deg, var(--color-success-100) 0%, var(--color-neutral-50) 40%);
+}
+
+.toast-error-bg {
+  background:
+    linear-gradient(180deg, var(--color-error-100) 0%, var(--color-neutral-50) 40%);
+}
+
+/* global.css or tailwind.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
