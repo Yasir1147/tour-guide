@@ -1,8 +1,8 @@
 <template>
   <!-- ✅ HERO SECTION -->
   <section
-    class="relative bg-cover bg-center text-white pb-56"
-    style="background-image: url('/hero-bg.jpg');"
+    class="relative bg-cover bg-center text-white pb-56  h-[70vh] md:h-[550px]"
+    style="background-image: url('/hero-bg.jpg'); "
   >
     <!-- Overlay -->
     <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent"></div>

@@ -23,7 +23,10 @@
 
       <!-- Rating -->
       <div class="flex items-center space-x-1 mt-1">
-        <UIcon name="i-heroicons-star-solid" class="text-yellow-400 text-[13px]" />
+        <UIcon name="i-heroicons-star-solid" class="text-gray-800  text-[13px]" />
+        <UIcon name="i-heroicons-star-solid" class="text-gray-800 text-[13px]" />
+        <UIcon name="i-heroicons-star-solid" class="text-gray-800 text-[13px]" />
+        <UIcon name="i-heroicons-star-solid" class="text-gray-800 text-[13px]" />
         <span class="text-xs text-gray-700">
           {{ card.rating }} ({{ card.reviews.toLocaleString() }})
         </span>
